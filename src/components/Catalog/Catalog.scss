@@ -1,0 +1,9 @@
+.catalog {
+  width: 100%;
+  padding-top: 60px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

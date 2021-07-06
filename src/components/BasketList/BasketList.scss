@@ -1,0 +1,60 @@
+.card {
+  padding-top: 60px;
+  display: flex;
+  &__product {
+    width: 100%;
+  }
+  .card__order-info {
+    min-width: 200px;
+    margin-left: 20px;
+    margin-top: 50px;
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      button {
+        cursor: pointer;
+        height: 50px;
+        margin-top: 50px;
+        border: none;
+        font-size: 16px;
+      }
+    }
+    &__full-price {
+      text-align: center;
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__list {
+    h2 {
+      text-align: center;
+      color: red;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    flex-direction: column;
+    &__order-info {
+      margin-left: 0;
+      padding: 0 20px;
+      .card__order-info__btn {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        button {
+          cursor: pointer;
+          height: 50px;
+          margin-top: 25px;
+          border: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.card-product {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 150px;
+    padding: 0 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+  &__img {
+    height: 100%;
+    overflow: hidden;
+    object-fit: inherit;
+    img {
+      height: 100%;
+    }
+  }
+  .product__conteiner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .conteiner__info {
+      align-self: flex-start;
+    }
+    .conteiner__btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      margin-left: 20px;
+      .btn {
+        cursor: pointer;
+        border: none;
+        height: 30px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #a1eeff;
+      }
+      input {
+        height: 30px;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    .conteiner__exit {
+      height: 100%;
+      width: 43px;
+      position: relative;
+      .btn-exit {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        left: 18px;
+        top: 5px;
+        position: absolute;
+      }
+    }
+  }
+}
