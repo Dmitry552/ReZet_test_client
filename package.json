@@ -22,6 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
+  "author": "Bendyug Dmitrij <foker552@gmail.com>",
   "eslintConfig": {
     "extends": [
       "react-app",
