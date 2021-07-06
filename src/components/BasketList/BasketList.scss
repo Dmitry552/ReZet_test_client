@@ -17,16 +17,28 @@
         margin-top: 50px;
         border: none;
         font-size: 16px;
-        background-color: #e9e6e6;
-      }
-      button:hover {
-        background-color: rgb(198, 198, 198);
+        border-radius: 5px;
+        &:hover {
+          background: #757575;
+          color: white;
+        }
+        &:disabled {
+          opacity: 0.9;
+          background: #c4c4c4;
+          color: #566885;
+        }
       }
     }
     &__full-price {
       text-align: center;
       h2 {
         margin-bottom: 15px;
+        font-size: 2em;
+        color: darkgreen;
+      }
+      p {
+        font-size: 1.5em;
+        font-weight: bold;
       }
     }
   }

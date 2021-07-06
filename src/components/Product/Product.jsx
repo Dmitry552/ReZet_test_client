@@ -7,7 +7,7 @@ const Product = ({_id, title, price, trueBasketProduct, image, isAuth, handlerAd
   return(
     <div className="product">
       <div className="product__image">
-        <img src={image} alt="Фото товара"/>
+        <img src={image}  className="img" alt="Фото товара"/>
       </div>
       <div className="product__conteiner">
         <div className="conteiner__info">
@@ -19,7 +19,7 @@ const Product = ({_id, title, price, trueBasketProduct, image, isAuth, handlerAd
         <div className="conteiner__btn">
           {trueBasketProduct ? 
             <button 
-              className={isAuth ? 'btn' : 'btn no-active'} 
+              className={isAuth ? 'btn remove_product' : 'btn no-active'} 
               onClick={() => handlerRemoveProductToCart(_id)} 
               disabled={isAuth ? false : true} 
               type='button'>Убрать из корзины

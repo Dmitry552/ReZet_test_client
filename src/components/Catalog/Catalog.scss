@@ -1,13 +1,22 @@
 .catalog {
   width: 100%;
-  padding-top: 60px;
+  padding: 60px 20px;
   &__list {
-    display: flex;
     justify-content: center;
-    .product__list {
-      display: flex;
+    &-wrap{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       flex-wrap: wrap;
-      justify-content: center;
+      column-gap: 12px;
+      @media all and (max-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media all and (max-width: 850px){
+        grid-template-columns: 1fr 1fr;
+      }
+      @media all and (max-width: 720px){
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

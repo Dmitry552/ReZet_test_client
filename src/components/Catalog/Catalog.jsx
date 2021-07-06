@@ -28,7 +28,7 @@ const Catalog = () => {
   return(
     <section className="catalog">
       <div className="catalog__list">
-        <div className="product__list">
+        <div className="catalog__list-wrap">
          {productList.map(product => {
           return <Product key={product._id} 
             {...product} isAuth={isAuth}
