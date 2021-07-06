@@ -17,6 +17,10 @@
         margin-top: 50px;
         border: none;
         font-size: 16px;
+        background-color: #e9e6e6;
+      }
+      button:hover {
+        background-color: rgb(198, 198, 198);
       }
     }
     &__full-price {

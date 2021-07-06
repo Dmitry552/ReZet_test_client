@@ -28,14 +28,16 @@ const Catalog = () => {
   return(
     <section className="catalog">
       <div className="catalog__list">
-        {productList.map(product => {
+        <div className="product__list">
+         {productList.map(product => {
           return <Product key={product._id} 
             {...product} isAuth={isAuth}
             trueBasketProduct={cardList.find(card => card.product._id === product._id)}
             handlerAddProductToCart = {handlerAddProductToCart}
             handlerRemoveProductToCart = {handlerRemoveProductToCart}
             />
-        })}
+        })} 
+        </div>
       </div>
     </section>
   )

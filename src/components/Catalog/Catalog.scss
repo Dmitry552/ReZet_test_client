@@ -3,7 +3,11 @@
   padding-top: 60px;
   &__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    .product__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
