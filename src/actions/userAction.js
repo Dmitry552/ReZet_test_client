@@ -10,7 +10,10 @@ export const registration = (email, password) => {
       });
       alert(response.data.message)
     } catch (error) {
-      alert(error.response.data.message)
+      console.log(error)
+      if(error.response) {
+        alert(error.response.data.message)
+      } else {alert('Регистрация не удалась!')}
     }
   }
 }
@@ -25,7 +28,11 @@ export const login = (email, password) => {
       dispatch(setUser(data.user));
       localStorage.setItem('token', data.token)
     } catch (error) {
-      alert(error)
+      console.log(error)
+      if(error.data) {
+        alert(error.response.data.message)
+      } else {alert('Авторизация не удалась!')}
+      
     }
   }
 }
@@ -38,6 +45,9 @@ export const auth = () => {
       localStorage.setItem('token', data.token)
     } catch (error) {
       console.log(error)
+      if(error.data) {
+        alert(error.response.data.message)
+      }
       localStorage.removeItem('token');
     }
   }

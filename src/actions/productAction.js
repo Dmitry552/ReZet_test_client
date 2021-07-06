@@ -7,7 +7,7 @@ export const set = () => {
       const {data} = await $host.get('api/product');
       dispatch(setProduct(data))
     } catch (error) {
-      alert(error)
+      console.log(error)
     }
   }
 }
