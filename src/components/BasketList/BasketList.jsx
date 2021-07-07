@@ -44,7 +44,7 @@ const BasketList = () => {
       <div className="card__order-info">
         <div className="card__order-info__full-price">
           <h2>Итоговая цена</h2>
-          <p>{fullPrice} &#36;</p>
+          <p>{fullPrice.toFixed(2)} &#36;</p>
         </div>
         <div className="card__order-info__btn">
           <button type='button' onClick={() => handlerOrdering()} 
